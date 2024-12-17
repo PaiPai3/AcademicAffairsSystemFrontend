@@ -1,9 +1,16 @@
-# 使用手则
-首先安装nodejs
-之后在IDE控制台运行
+# Environment and dependencies
+Make sure:
+- [Git](https://git-scm.com/downloads) installed
+- [Node.js](https://nodejs.org/en/download/current) installed
+
+At terminal:
+
+Run `npm install` to install the project dependencies
 ```bash
 npm install
-
-最后
+```
+    
+Run `npm run dev` to start the development serve
 ```bash
 npm run dev
+```
