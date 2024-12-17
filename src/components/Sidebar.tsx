@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaChalkboardTeacher, FaChartBar, FaCog } from 'react-icons/fa'; // 引入图标
+import {FaChalkboardTeacher, FaChartBar, FaClipboardList, FaCog} from 'react-icons/fa'; // 引入图标
 import './Sidebar.css';
 
 const Sidebar: React.FC = () => {
@@ -19,7 +19,7 @@ const Sidebar: React.FC = () => {
                 </li>
                 <li>
                     <Link to="/select-courses">
-                        <FaChalkboardTeacher className="icon" />
+                        <FaClipboardList className="icon" />
                         <span>选课界面</span>
                     </Link>
                 </li>
