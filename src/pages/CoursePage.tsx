@@ -14,37 +14,6 @@ const CoursePage: React.FC = () => {
         { day: 5, start: 6, end: 7, title: '数字图像处理实验', location: '菁菁校区 实验楼A102', details: '22级计算机类' },
     ];
 
-    // 模拟可选课程数据
-    const availableCourses = [
-        {
-            name: '机器学习',
-            credit: 3,
-            teacher: '王老师',
-            location: '菁菁校区 博弈北A302',
-            day: 2,
-            start: 3,
-            end: 4,
-        },
-        {
-            name: '人工智能导论',
-            credit: 2,
-            teacher: '李老师',
-            location: '菁菁校区 博弈北B405',
-            day: 3,
-            start: 6,
-            end: 7,
-        },
-        {
-            name: '大数据分析',
-            credit: 3,
-            teacher: '张老师',
-            location: '菁菁校区 科学楼C105',
-            day: 5,
-            start: 8,
-            end: 9,
-        },
-    ];
-
 
 
     // 判断课程是否在单元格中
@@ -103,9 +72,6 @@ const CoursePage: React.FC = () => {
                         </tbody>
                     </table>
                 </div>
-
-
-
 
             </div>
         </div>
