@@ -14,6 +14,12 @@ const Sidebar: React.FC = () => {
                 <li>
                     <Link to="/courses">
                         <FaChalkboardTeacher className="icon" />
+                        <span>课表界面</span>
+                    </Link>
+                </li>
+                <li>
+                    <Link to="/select-courses">
+                        <FaChalkboardTeacher className="icon" />
                         <span>选课界面</span>
                     </Link>
                 </li>
