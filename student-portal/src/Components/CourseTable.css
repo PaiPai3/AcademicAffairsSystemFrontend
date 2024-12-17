@@ -1,0 +1,58 @@
+.course-table {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+.grid-header {
+    display: grid;
+    grid-template-columns: 100px repeat(7, 1fr); /* 第一列固定，后面平分 */
+    text-align: center;
+    font-weight: bold;
+    background-color: #f8f8f8;
+}
+
+.grid-header div {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* 左侧时间节次列与课程表主体 */
+.grid-container {
+    display: grid;
+    grid-template-columns: 100px repeat(7, 1fr); /* 第一列是时间，剩下7列是周一到周日 */
+    grid-template-rows: repeat(13, 60px); /* 13节课，每节课60px高度 */
+}
+
+.time-slot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    font-weight: bold;
+    background-color: #fafafa;
+}
+
+/* 课程单元格 */
+.course-card {
+    background-color: rgba(135, 206, 250, 0.3);
+    border: 1px solid #87cefa;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 2px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.course-name {
+    font-weight: bold;
+}
+
+.course-location,
+.course-teacher {
+    font-size: 11px;
+    color: #555;
+}

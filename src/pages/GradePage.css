@@ -1,0 +1,77 @@
+.grade-container {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.year-select {
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    font-size: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    padding-left: 20px;
+    padding-bottom: 5px;
+}
+
+
+.header {
+    justify-content: space-between;
+}
+
+.year-select label {
+    margin-right: 10px;
+}
+
+.year-select select {
+    padding: 5px;
+    font-size: 16px;
+}
+
+/* 成绩表格容器，固定高度，显示滚动条 */
+.grade-table {
+    flex: 1;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow-y: auto; /* 当内容超出高度时显示滚动条 */
+    max-height: 400px; /* 设置最大高度 */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; /* 固定列宽 */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+th {
+    background-color: #f0f0f0;
+}
+
+/* 固定宽度样式 */
+td {
+    white-space: nowrap; /* 不换行 */
+    overflow: hidden; /* 隐藏超出部分 */
+    text-overflow: ellipsis; /* 显示省略号 */
+}
+
+.gpa {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: right;
+    color: #333;
+}
+
